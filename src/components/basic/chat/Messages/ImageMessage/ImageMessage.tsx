@@ -11,8 +11,9 @@ class ImageMessage extends Component<
     render() {
         return (
             <div>
-                <p className={s.username}>{this.props.username}:</p>
-                <img src={this.props.message} className={s.image} />
+                {/* style={{ fontWeight: "500",fontSize: "20px",marginBottom: "0px",wordWrap: "break-word",color: "#ECECF1"}} */}
+                <p  className={s.username}>{this.props.username}:</p>
+                <img style={{width:"100%"}} src={this.props.message} />
             </div>
         );
     }

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Header from '../../components/basic/all/Header/Header';
 import CardList from '../../components/basic/main/CardList/CardList';
+import Login from '../../components/basic/main/modals/Login/Login';
+import Register from '../../components/basic/main/modals/Register/Register';
 import s from './Main.module.sass';
 
 class Main extends Component<
@@ -28,6 +30,7 @@ class Main extends Component<
         return (
             <div className='pagebase'>
                 <Header />
+              
                 <div className={s.contentContainer}>
                     <h1 style={{marginBottom:"0px"}} className={s.title}>Welcome to BEST chatGPT </h1>
                     <h4 style={{marginTop:"0px",color:"#c9c9c9"}}>copy</h4>

@@ -15,3 +15,30 @@ code {
 html{
   font-family: Söhne,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
+
+.modal_container{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0000005f;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal_card{
+  border-radius: 0.375em;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 30px 60px 60px 60px;
+}
+
+.modal_container.active{
+  opacity: 1;
+  pointer-events: all;
+}
